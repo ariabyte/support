@@ -19,6 +19,7 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
+    client.user.setPresence({ activities: [{ name: "you 💻", type: 2 }] });
     console.log('Ready!');
 });
 
